@@ -199,8 +199,7 @@ export const ContactUsPage: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-20 left-20 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/20 animate-float delay-500">
-                                <div className="flex items-center space-x-3">
+<div className="absolute bottom-20 left-20 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/20 animate-float delay-500 hidden md:block">                                <div className="flex items-center space-x-3">
                                     <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                                         <Shield className="w-5 h-5 text-white" />
                                     </div>
@@ -211,8 +210,7 @@ export const ContactUsPage: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-10 right-20 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/20 animate-float delay-1500">
-                                <div className="flex items-center space-x-3">
+<div className="absolute bottom-10 right-20 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/20 animate-float delay-1500 hidden md:block">                                <div className="flex items-center space-x-3">
                                     <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
                                         <Users className="w-5 h-5 text-white" />
                                     </div>
@@ -582,7 +580,7 @@ export const ContactUsPage: React.FC = () => {
                                         <Shield className="w-4 h-4 text-green-500" />
                                         <span>Blockchain Certified</span>
                                     </div>
-                                    <div className="flex items-center justify-center space-x-2">
+                                    <div className="flex items-center justify-center space-x-2 ">
                                         <Users className="w-4 h-4 text-blue-500" />
                                         <span>500+ Happy Clients</span>
                                     </div>
