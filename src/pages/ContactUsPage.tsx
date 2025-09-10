@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     Mail,
     Phone,
@@ -66,6 +66,9 @@ export const ContactUsPage: React.FC = () => {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
