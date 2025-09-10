@@ -6,6 +6,7 @@ import { ListingsPage } from './pages/ListingsPage';
 import { PropertyDetailPage } from './pages/PropertyDetailPage';
 import { FavoritesPage } from './pages/FavoritesPage';
 import { DashboardPage } from './pages/DashboardPage';
+import { ContactUsPage } from './pages/ContactUsPage';
 
 const AppContent: React.FC = () => {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -79,6 +80,10 @@ const AppContent: React.FC = () => {
               onConnectWallet={handleConnectWallet}
             />
           } 
+        />
+        <Route 
+          path="/contact-us" 
+          element={<ContactUsPage />} 
         />
       </Routes>
     </>

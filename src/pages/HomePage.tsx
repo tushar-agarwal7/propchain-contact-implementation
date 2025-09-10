@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, TrendingUp, Shield, Zap, ArrowRight, Star } from 'lucide-react';
+import {  TrendingUp, Shield, Zap, ArrowRight } from 'lucide-react';
 import { PropertyCard } from '../components/PropertyCard/PropertyCard';
 import { mockProperties, mockMarketData } from '../data/mockData';
 
@@ -46,7 +46,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onToggleFavorite, onProperty
               >
                 Explore Properties
               </Link>
-              <button className="border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
+                <button className="border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
                 Learn More
               </button>
             </div>
@@ -189,9 +189,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onToggleFavorite, onProperty
             >
               Browse Properties
             </Link>
-            <button className="border-2 border-white/30 hover:border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
-              Contact Sales
-            </button>
+            <Link
+                to="/contact-us"
+                className="border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm"
+              >
+                Contact Sales
+              </Link>
           </div>
         </div>
       </section>
